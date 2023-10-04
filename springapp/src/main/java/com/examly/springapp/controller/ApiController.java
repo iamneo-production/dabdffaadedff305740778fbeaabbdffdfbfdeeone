@@ -22,14 +22,14 @@ public class ApiController {
     @Autowired
     private BookService bookService;
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://8081-dabdffaadedff305740778fbeaabbdffdfbfdeeone.premiumproject.examly.io")
     @PostMapping("/addBook")
     public boolean addBook(@RequestBody Book book)
     {
         return bookService.addBook(book);
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://8081-dabdffaadedff305740778fbeaabbdffdfbfdeeone.premiumproject.examly.io")
     @GetMapping("/getAllBook")
     public List <Book> getAllBooks()
     {

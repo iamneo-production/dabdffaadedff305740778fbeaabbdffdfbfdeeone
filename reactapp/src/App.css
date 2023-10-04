@@ -1,38 +1,206 @@
-.App {
+/* Header Styles */
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-title {
+  font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navigation Styles */
+.nav-list {
+  list-style: none;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  text-decoration: none;
   color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-link:hover {
+  color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Home Styles */
+.home {
+  text-align: center;
+  padding: 20px;
 }
+
+.home-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.home-image {
+  max-width: 100%;
+  margin-bottom: 10rem;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* AddCollection Styles */
+.add-collection {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.add-collection h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.add-collection label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.add-collection input[type="text"],
+.add-collection select {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-collection .error {
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.add-collection button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-collection button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Success modal styles */
+.success-modal {
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.success-modal p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.success-modal button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.success-modal button:hover {
+  background-color: #0056b3;
+}
+
+/* CSS for Displaycollection component */
+.display-collection {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 800px;
+  margin-bottom: 7rem;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.book-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.book-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-item strong {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.book-item div {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Add hover effect */
+.book-item:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* CSS for Footer component */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Adjust the background color, text color, and styles as needed */
+/* Add more styles as needed */
