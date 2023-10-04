@@ -7,7 +7,7 @@ const DisplayCollection = () => {
     // Fetch data from the backend when the component mounts
     async function fetchData() {
       try {
-        const response = await fetch('http://localhost:8080/getAllBook', {
+        const response = await fetch('https://8080-dabdffaadedff305740778fbeaabbdffdfbfdeeone.premiumproject.examly.io/getAllBook', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

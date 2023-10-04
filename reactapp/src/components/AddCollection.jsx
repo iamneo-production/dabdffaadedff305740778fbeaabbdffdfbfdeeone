@@ -19,7 +19,7 @@ const AddCollection = () => {
 
     if (Object.keys(validationErrors).length === 0) {
       try {
-        const response = await fetch('https://8080-dabdffaadedff305740778fbeaabbdffdfbfdeeone.premiumproject.examly.io/addBook', {
+        const response = await fetch('https://8080-dabdffaadedff305740778fbeaabbdffdfbfdeeone.premiumproject.examly.io/addsBook', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
