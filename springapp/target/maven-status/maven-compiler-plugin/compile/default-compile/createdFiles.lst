@@ -1,0 +1,6 @@
+com/examly/springapp/service/BookService.class
+com/examly/springapp/SpringappApplication.class
+com/examly/springapp/controller/ApiController.class
+com/examly/springapp/model/Book.class
+com/examly/springapp/configuration/CorsConfiguartion.class
+com/examly/springapp/repository/BookRepo.class
