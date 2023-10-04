@@ -1,29 +1,24 @@
- import React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 
 const Header = () => {
-  const reloadPage = () => {
-    window.location.reload();
-  };
-
   return (
     <header className="header">
-      <h1 data-testid = "app-title" className="header-title">Employee Task Management System</h1>
-      <nav className="nav">
+      <h1 data-testid = "app_title" className="header-title">Library Collection App</h1>
+      <nav>
         <ul className="nav-list">
           <li className="nav-item">
             <Link to="/" className="nav-link">Home</Link>
           </li>
           <li className="nav-item">
-            <Link to="/addtask" className="nav-link">Add Task</Link>
+            <Link to="/addCollection" className="nav-link">Add Collection</Link>
           </li>
           <li className="nav-item">
-            <Link to="/displaytasks" className="nav-link">Display Tasks</Link>
+            <Link to="/displaycollection" className="nav-link">Display Collection</Link>
           </li>
         </ul>
       </nav>
-      <button className="reload-button" onClick={reloadPage}>Reload</button>
     </header>
   );
 };
